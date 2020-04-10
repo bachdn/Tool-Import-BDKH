@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi"><?define Import_KHBD_TargetDir=$(var.Import_KHBD.TargetDir)?>
+	<Product Id="*" Name="Import_Ticket_KHBD" Language="1033" Version="1.0.0.0" Manufacturer="FPT Information System" UpgradeCode="3e2e4119-e168-4f96-9404-52840cfa0926">
+		<Package InstallerVersion="200" Compressed="yes" InstallScope="perMachine" />
+
+		<MajorUpgrade DowngradeErrorMessage="A newer version of [ProductName] is already installed." />
+		<MediaTemplate />
+
+		<Feature Id="ProductFeature" Title="Import_Ticket_KHBD" Level="1">
+			<ComponentGroupRef Id="ProductComponents" />
+      <ComponentRef Id="ApplicationShortcut" />
+      <ComponentRef Id="ApplicationShortcutDesktop" />
+		</Feature>
+	</Product>
+
+	<Fragment>
+		<Directory Id="TARGETDIR" Name="SourceDir">
+			<Directory Id="ProgramFilesFolder">
+				<Directory Id="INSTALLFOLDER" Name="Import_Ticket_KHBD" />
+			</Directory>
+      <Directory Id="ProgramMenuFolder">
+        <Directory Id="ApplicationProgramsFolder" Name="Import_Ticket_KHBD"/>
+      </Directory>
+      <Directory Id="DesktopFolder" Name="Desktop"/>
+		</Directory>
+	</Fragment>
+
+	<Fragment>
+		<ComponentGroup Id="ProductComponents" Directory="INSTALLFOLDER">
+			<!-- TODO: Remove the comments around this Component element and the ComponentRef below in order to add resources to this installer. -->
+			<!-- <Component Id="ProductComponent"> -->
+				<!-- TODO: Insert files, registry keys, and other resources here. -->
+			<!-- </Component> -->
+			<Component Id="Oxygen_Icons.org_Oxygen_Actions_document_import.ico" Guid="27024dcd-572e-45d9-9cd1-1f3c5dece4de">
+			  <File Id="Oxygen_Icons.org_Oxygen_Actions_document_import.ico" Name="Oxygen-Icons.org-Oxygen-Actions-document-import.ico" Source="$(var.Import_KHBD_TargetDir)Oxygen-Icons.org-Oxygen-Actions-document-import.ico" />
+			</Component>
+			<Component Id="Import_KHBD.exe" Guid="c2bef2c9-e416-4831-8be6-e443de3b8199">
+			  <File Id="Import_KHBD.exe" Name="Import_KHBD.exe" Source="$(var.Import_KHBD_TargetDir)Import_KHBD.exe" />
+			</Component>
+			<Component Id="Import_KHBD.exe.config" Guid="c10bcb2f-b8aa-44c0-a17d-795a5caa891f">
+			  <File Id="Import_KHBD.exe.config" Name="Import_KHBD.exe.config" Source="$(var.Import_KHBD_TargetDir)Import_KHBD.exe.config" />
+			</Component>
+		</ComponentGroup>
+	</Fragment>
+  <Fragment>
+    <DirectoryRef Id="ApplicationProgramsFolder">
+      <Component Id="ApplicationShortcut" Guid="d388ccc7-5af7-4738-b71a-b6f1278c3077">
+        <Shortcut Id="ApplicationStartMenuShortcut" Name="Import Ticket KHBD" Description="Tool Import Ticket KHBD" Target="[INSTALLFOLDER]Import_KHBD.exe" WorkingDirectory="INSTALLFOLDER" />
+        <RemoveFolder Id="RemoveApplicationProgramsFolder" Directory="ApplicationProgramsFolder" On="uninstall" />
+        <RegistryValue Root="HKCU" Key="Software\MyWpfApplication" Name="installed" Type="integer" Value="1" KeyPath="yes" />
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="DesktopFolder">
+      <Component Id="ApplicationShortcutDesktop" Guid="d388ccc7-5af7-4738-b71a-b6f1278c3088">
+        <Shortcut Id="ApplicationDesktopShortcut" Name="Import Ticket KHBD" Description="Tool Import_KHBD" Target="[INSTALLFOLDER]Import_KHBD.exe" WorkingDirectory="INSTALLFOLDER" />
+        <RemoveFolder Id="RemoveDesktopFolder" Directory="DesktopFolder" On="uninstall" />
+        <RegistryValue Root="HKCU" Key="Software\MyWpfApplication" Name="installed" Type="integer" Value="1" KeyPath="yes" />
+      </Component>
+    </DirectoryRef>
+  </Fragment>
+</Wix>

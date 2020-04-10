@@ -1,0 +1,7 @@
+C:\ContactCA\ImportKHBD\bin\Release\ImportKHBD.msi
+C:\ContactCA\ImportKHBD\bin\Release\ImportKHBD.wixpdb
+obj\Release\Product.wixobj
+obj\Release\ImportKHBD.wixproj.BindContentsFileListnull.txt
+obj\Release\ImportKHBD.wixproj.BindOutputsFileListnull.txt
+obj\Release\ImportKHBD.wixproj.BindBuiltOutputsFileListnull.txt
+C:\ContactCA\ImportKHBD\bin\Release\cab1.cab

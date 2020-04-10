@@ -1,0 +1,3 @@
+C:\ContactCA\ImportKHBD\bin\Release\cab1.cab
+C:\ContactCA\ImportKHBD\bin\Release\ImportKHBD.msi
+C:\ContactCA\ImportKHBD\bin\Release\ImportKHBD.wixpdb

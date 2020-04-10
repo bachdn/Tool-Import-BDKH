@@ -1,0 +1,7 @@
+obj\Debug\Product.wixobj
+C:\ContactCA\Import Ticket KHBD\bin\Debug\cab1.cab
+C:\ContactCA\Import Ticket KHBD\bin\Debug\Import_Ticket_KHBD.msi
+C:\ContactCA\Import Ticket KHBD\bin\Debug\Import_Ticket_KHBD.wixpdb
+obj\Debug\Import Ticket KHBD.wixproj.BindContentsFileListnull.txt
+obj\Debug\Import Ticket KHBD.wixproj.BindOutputsFileListnull.txt
+obj\Debug\Import Ticket KHBD.wixproj.BindBuiltOutputsFileListnull.txt

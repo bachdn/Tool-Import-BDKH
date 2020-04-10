@@ -1,0 +1,3 @@
+C:\ContactCA\Import Ticket KHBD\bin\Debug\cab1.cab
+C:\ContactCA\Import Ticket KHBD\bin\Debug\Import_Ticket_KHBD.msi
+C:\ContactCA\Import Ticket KHBD\bin\Debug\Import_Ticket_KHBD.wixpdb

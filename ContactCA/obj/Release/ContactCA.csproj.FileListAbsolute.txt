@@ -1,0 +1,9 @@
+\\Mac\Home\Desktop\ContactCA\ContactCA\bin\Release\ContactCA.exe.config
+\\Mac\Home\Desktop\ContactCA\ContactCA\bin\Release\ContactCA.exe
+\\Mac\Home\Desktop\ContactCA\ContactCA\bin\Release\ContactCA.pdb
+\\Mac\Home\Desktop\ContactCA\ContactCA\obj\Release\ContactCA.csprojResolveAssemblyReference.cache
+\\Mac\Home\Desktop\ContactCA\ContactCA\obj\Release\ContactCA.fromContact.resources
+\\Mac\Home\Desktop\ContactCA\ContactCA\obj\Release\ContactCA.Properties.Resources.resources
+\\Mac\Home\Desktop\ContactCA\ContactCA\obj\Release\ContactCA.csproj.GenerateResource.Cache
+\\Mac\Home\Desktop\ContactCA\ContactCA\obj\Release\ContactCA.exe
+\\Mac\Home\Desktop\ContactCA\ContactCA\obj\Release\ContactCA.pdb

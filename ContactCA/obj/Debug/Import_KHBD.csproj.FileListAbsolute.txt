@@ -1,0 +1,9 @@
+C:\ContactCA\ContactCA\obj\Debug\Import_KHBD.Properties.Resources.resources
+C:\ContactCA\ContactCA\obj\Debug\Import_KHBD.csproj.GenerateResource.Cache
+C:\ContactCA\ContactCA\obj\Debug\Import_KHBD.fromContact.resources
+C:\ContactCA\ContactCA\bin\Debug\Import_KHBD.exe.config
+C:\ContactCA\ContactCA\bin\Debug\Import_KHBD.exe
+C:\ContactCA\ContactCA\bin\Debug\Import_KHBD.pdb
+C:\ContactCA\ContactCA\obj\Debug\Import_KHBD.exe
+C:\ContactCA\ContactCA\obj\Debug\Import_KHBD.pdb
+C:\ContactCA\ContactCA\obj\Debug\Import_KHBD.csprojResolveAssemblyReference.cache
